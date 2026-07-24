@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="flex flex-col gap-4 border-t border-gray-100 px-6 py-10 text-xs text-gray-500 sm:flex-row sm:items-center sm:justify-between sm:px-10 md:px-16"
+      className="flex flex-col gap-4 border-t border-gray-100 px-6 py-10 text-xs text-gray-500 dark:border-white/10 dark:text-neutral-400 sm:flex-row sm:items-center sm:justify-between sm:px-10 md:px-16"
     >
       <div>
         <p>+84 xxx xxx xxx · contact@nguyenthanhhuy.io.vn</p>

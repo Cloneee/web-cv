@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -15,4 +17,10 @@ body {
   font-family: var(--font-sans);
   color: #000;
   background: #fff;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+html.dark body {
+  color: #f5f5f5;
+  background: #0a0a0a;
 }
