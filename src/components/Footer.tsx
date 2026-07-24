@@ -6,11 +6,8 @@ export default function Footer() {
     >
       <div>
         <p>+84 xxx xxx xxx · contact@nguyenthanhhuy.io.vn</p>
-        <p className="mt-1">
-          © 2026 Nguyen Thanh Huy. Aesthetic inspiration from Steve Jobs.
-        </p>
+        <p className="mt-1">© 2026 Nguyen Thanh Huy. Aesthetic inspiration from Steve Jobs.</p>
       </div>
-      <p>Portrait inspired by the Albert Watson style.</p>
     </footer>
-  )
+  );
 }

@@ -7,5 +7,5 @@ export default function Hero() {
         className="w-full max-w-xl object-cover grayscale sm:max-w-2xl"
       />
     </section>
-  )
+  );
 }

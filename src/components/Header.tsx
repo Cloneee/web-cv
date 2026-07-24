@@ -1,8 +1,8 @@
 const NAV_LINKS = [
-  { label: 'ABOUT', href: '#about' },
-  { label: 'MILESTONES', href: '#milestones' },
-  { label: 'CONTACT', href: '#contact' },
-]
+  { label: "ABOUT", href: "#about" },
+  { label: "STACK", href: "#stack" },
+  { label: "MILESTONES", href: "#milestones" },
+];
 
 export default function Header() {
   return (
@@ -12,18 +12,14 @@ export default function Header() {
           NGUYEN THANH HUY
         </h1>
         <p className="mt-1 text-xs font-light tracking-[0.2em] text-gray-400 sm:text-sm">
-          CREATIVE TECHNOLOGIST &amp; STORYTELLER
+          SENIOR AUTOMOTIVE SOFTWARE ENGINEER
         </p>
       </div>
 
       <div className="flex items-center gap-6">
         <nav className="hidden items-center gap-6 text-xs font-medium tracking-wider text-gray-700 sm:flex">
           {NAV_LINKS.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="transition-colors hover:text-black"
-            >
+            <a key={link.label} href={link.href} className="transition-colors hover:text-black">
               {link.label}
             </a>
           ))}
@@ -36,5 +32,5 @@ export default function Header() {
         </a>
       </div>
     </header>
-  )
+  );
 }
