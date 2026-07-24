@@ -30,3 +30,17 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Deployment
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
+
+- It runs on every push to `main`.
+- It installs dependencies and runs `npm run build:pages`.
+- It deploys `dist/` to GitHub Pages automatically.
+
+For local verification of the Pages bundle:
+
+```bash
+npm run build:pages
+```
